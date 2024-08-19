@@ -9,6 +9,18 @@ import { fizzBuzzArray } from "./basic_challenges/fizzbuzzArray";
 import { arrayIntersection } from "./basic_challenges/arrayIntersection";
 import { findMissingNumber } from "./basic_challenges/findmissingnumber";
 import { findMissingLetter } from "./basic_challenges/findMissingLetter";
+import { allCharUnique } from "./basic_challenges/allCharUnique";
+import { allCharUniqueUsingForLoop } from "./basic_challenges/allCharUnique";
+import { allCharUniqueUsingSet } from "./basic_challenges/allCharUnique";
+import { firstNonRepeatingCharacter } from "./basic_challenges/firstNonRepaetingchar";
+import { sumOfEvenNumber } from "./HigherOrderMethods/sumOfEvenNumber";
+import { validAnagram } from "./HigherOrderMethods/ValidAnagram";
+import { reverseStringUsingRecustion } from "./recursion/reverseString";
+import { factorial } from "./recursion/factorial";
+import { power } from "./recursion/power";
+import { arraySum } from "./recursion/arraySum";
+import { numberRange } from "./recursion/numberRange";
+import { flattenArray } from "./recursion/flattenArray";
 const Main = () => {
     // count occurences
     // const result =  countOccurenses('Hello hi bye bye' , 'o');  
@@ -27,7 +39,19 @@ const Main = () => {
     // const res = fizzBuzzArray(5);,
     // const res = arrayIntersection([1,2,3,4,5,4,6,9] , [8,4,9,5,6])
     // const res = findMissingNumber([1,2,3,4,5,6,7,8,10])
-    const res = findMissingLetter(['c' ,'d' , 'f' ])
+    // const res = findMissingLetter(['c' ,'d' , 'f' ])
+    // const res = allCharUnique('abd');
+    // const res = allCharUniqueUsingForLoop('hello');
+    // const res = allCharUniqueUsingSet('helo');
+    // const res = firstNonRepeatingCharacter('aabbccdeeff');
+    // const res = sumOfEvenNumber([1 , 2 , 3 ,4 ,5 , 6 , 7 , 8]);
+    // const res = validAnagram('silent' , 'listen');
+    // const res = reverseStringUsingRecustion('hello');
+    // const res = factorial(5)
+    // const res = power(2 , 5);
+    // const res = arraySum([1,2,3,4,5])
+    // const res = numberRange(1,5);
+    const res = flattenArray([1,2,3,4,[5,6,7,8,[10],[11],[12]]])
     console.log(res);
 
 }

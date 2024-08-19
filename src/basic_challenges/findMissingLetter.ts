@@ -9,7 +9,6 @@ export const findMissingLetter = (arr:string[]):string => {
 
       const startIndex = alphabet.indexOf(arr[0]);
 
-      const endIndex  = alphabet.indexOf(arr[arr.length - 1]);
 
     //   for(let i = startIndex ; i <= endIndex ; i++){
     //        if(arr[i] !== alphabet[startIndex + i]){
