@@ -12,7 +12,8 @@ export const QuickSort = (arr:number[]) : number[] => {
     const left = [];
     const right  = [];
 
-    for(let i:number = 0 ;  i < arr.length -1 ; i++){
+    for(let i:number = 0 ;  i < arr.length; i++){
+        if(arr[i] === arr[arr.length -1]) continue;
           if(arr[i] < pivot){
               left.push(arr[i])
           }else{

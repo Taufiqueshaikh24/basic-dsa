@@ -32,6 +32,12 @@ import { InsertionSort } from "./Sorting/InsertionSort";
 import { SelectionSort } from "./Sorting/SelectionSort";
 import { MergeSort } from "./Sorting/MergeSort";
 import { QuickSort } from "./Sorting/QuickSort";
+import { Stack } from "./Stack/Stack";
+import { reverseStrinUsingStack } from "./Stack/reverseUsingStack";
+import { BalancedParenthesis } from "./Stack/BalancedParenthesis";
+import { Queue } from "./Queue/queue";
+import { reverseStrinUsingQueue } from "./Queue/reverseStringUsingQueue";
+import { palindromeWithQueue } from "./Queue/PalindromeWithQueue";
 
 const Main = () => {
     // count occurences
@@ -75,10 +81,22 @@ const Main = () => {
     // const res = InsertionSort([435,32,5,553,56,2,57,2])
     // const res  = SelectionSort([33,2,4,3,5,72,56,67,7])
     // const res = MergeSort([23,4,5,6,7,445,24])
-    const res  = QuickSort([35,3,5,22,6,43,53,2,34,])
+    // const res  = QuickSort([35,3,5,22,6,43,53,2,34,])
+    // const res = reverseStrinUsingStack('Hello hi bye bye')
+    // const res = BalancedParenthesis('()()')
+    // const res = reverseStrinUsingQueue('Hellow Hie Bie Bie');
+    const res = palindromeWithQueue('radar');
     console.log(res);
 
 }
 
 Main();
 
+
+// const stack = new Stack();
+// stack.push(1)
+// stack.push(2)
+// stack.push(3)
+// stack.push(4)
+// console.log(stack.peek())
+// console.log(stack);
