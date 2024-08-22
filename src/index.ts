@@ -21,6 +21,18 @@ import { power } from "./recursion/power";
 import { arraySum } from "./recursion/arraySum";
 import { numberRange } from "./recursion/numberRange";
 import { flattenArray } from "./recursion/flattenArray";
+import { permutations } from "./recursion/permutations";
+import { wordCountFrequency } from "./Maps/wordCountFrequency";
+import { AnagramGrouping } from "./Maps/AnagramGrouping";
+import { symettricDifference } from "./Maps/symmetricDifference";
+import { twoSum } from "./Maps/twoSum";
+import { BubbleSort } from "./Sorting/BubbleSort";
+import { BubbleSortUsingOneLoop } from "./Sorting/BubbleSortUsing1Loop";
+import { InsertionSort } from "./Sorting/InsertionSort";
+import { SelectionSort } from "./Sorting/SelectionSort";
+import { MergeSort } from "./Sorting/MergeSort";
+import { QuickSort } from "./Sorting/QuickSort";
+
 const Main = () => {
     // count occurences
     // const result =  countOccurenses('Hello hi bye bye' , 'o');  
@@ -51,7 +63,19 @@ const Main = () => {
     // const res = power(2 , 5);
     // const res = arraySum([1,2,3,4,5])
     // const res = numberRange(1,5);
-    const res = flattenArray([1,2,3,4,[5,6,7,8,[10],[11],[12]]])
+    // const res = flattenArray([1,2,3,4,[5,6,7,8,[10],[11],[12]]])
+    // const res = permutations('abc');
+    // const res = wordCountFrequency('hello hi bye bye');
+    // const res = AnagramGrouping(['cat','act','tac' , 'dog' , 'odg']);
+    // const res = symettricDifference([1,2,3] , [3 ,4 ,5]);
+    // const res = twoSum([2,7,11,15], 17);
+    // const res = LongestConsecutiveNumber([10,1,2,3,4,7]);
+    // const res = BubbleSort([9,7,6,5,4,3,2,1]);
+    // const res = BubbleSortUsingOneLoop([43,546,77,4,3,5,78,])
+    // const res = InsertionSort([435,32,5,553,56,2,57,2])
+    // const res  = SelectionSort([33,2,4,3,5,72,56,67,7])
+    // const res = MergeSort([23,4,5,6,7,445,24])
+    const res  = QuickSort([35,3,5,22,6,43,53,2,34,])
     console.log(res);
 
 }
