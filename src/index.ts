@@ -38,6 +38,11 @@ import { BalancedParenthesis } from "./Stack/BalancedParenthesis";
 import { Queue } from "./Queue/queue";
 import { reverseStrinUsingQueue } from "./Queue/reverseStringUsingQueue";
 import { palindromeWithQueue } from "./Queue/PalindromeWithQueue";
+import { LinearSearch } from "./searchingAlgos/LinearSearch";
+import { BinarySeach } from "./searchingAlgos/BinarySearch";
+import { LinkedList } from "./LinkedList/linkedlist";
+import MaxSubArray from "./basic_challenges/findMaxSubArray";
+import findMaxSubArrayUsingSlidingWindowTechnique from "./basic_challenges/MaxSubArrayWithSlidingwindow";
 
 const Main = () => {
     // count occurences
@@ -85,12 +90,29 @@ const Main = () => {
     // const res = reverseStrinUsingStack('Hello hi bye bye')
     // const res = BalancedParenthesis('()()')
     // const res = reverseStrinUsingQueue('Hellow Hie Bie Bie');
-    const res = palindromeWithQueue('radar');
-    console.log(res);
+    // const res = palindromeWithQueue('radar');
+    // const res = LinearSearch([23,45,4,69] , 69)
+    // const  res = BinarySeach([1,2,3,4,5,6,7,8,9,10] , 10);
+    // const res = MaxSubArray([3,4,5,2,34,4,56,3], 3)
+    // const res = findMaxSubArrayUsingSlidingWindowTechnique([3,4,5,3,2,3,45] , 3);
+    // console.log(res);
 
 }
 
 Main();
+
+
+const list = new LinkedList<number>();
+
+list.add(100);
+list.add(200);
+list.add(300);
+list.add(400);
+list.add(500);
+list.insertAt(2400, 3);
+list.removeAt(3);
+list.printAll();
+
 
 
 // const stack = new Stack();
