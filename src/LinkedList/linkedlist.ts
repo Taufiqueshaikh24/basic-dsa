@@ -86,4 +86,15 @@ export class LinkedList<T> {
     }
 }
 
+// const list = new LinkedList<number>();
+
+// list.add(100);
+// list.add(200);
+// list.add(300);
+// list.add(400);
+// list.add(500);
+// list.insertAt(2400, 3);
+// list.removeAt(3);
+// list.printAll();
+
 

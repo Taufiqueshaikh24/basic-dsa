@@ -43,6 +43,18 @@ import { BinarySeach } from "./searchingAlgos/BinarySearch";
 import { LinkedList } from "./LinkedList/linkedlist";
 import MaxSubArray from "./basic_challenges/findMaxSubArray";
 import findMaxSubArrayUsingSlidingWindowTechnique from "./basic_challenges/MaxSubArrayWithSlidingwindow";
+import reverseStrinUsingLinkedList from "./LinkedList/reverseStringUsingLinkedList";
+import {  twoCrystalBalls } from "./basic_challenges/TwoCrystalBalls";
+import { Queue2 } from "./Queue/Queue2";
+import { Stack2 } from "./Stack/stack2";
+
+import Solve from "./recursion/MazeSolver";
+import Quicksort2 from "./Sorting/Quicksort2";
+import { DoublyLinkedList } from "./DoublyLinkedList/DoublyLinkedList";
+import preOrder, { BinaryNode } from "./Stack/Trees/PreOrderTraversal";
+import DFSSearch from "./Stack/Trees/DFSsearch";
+import { MinHeap } from "./Heap/MinHeap";
+import dfs, { AdjancyList } from "./Graph/AdjancyList";
 
 const Main = () => {
     // count occurences
@@ -95,23 +107,64 @@ const Main = () => {
     // const  res = BinarySeach([1,2,3,4,5,6,7,8,9,10] , 10);
     // const res = MaxSubArray([3,4,5,2,34,4,56,3], 3)
     // const res = findMaxSubArrayUsingSlidingWindowTechnique([3,4,5,3,2,3,45] , 3);
-    // console.log(res);
+    // const res = reverseStrinUsingLinkedList('Hemlo')
+    // const res  = twoCrystalBalls([false, false , false , true ,true , true]);
+        // const res = Quicksort2([43,546,77,4,3,5,78,])
+    //     const res = new BinaryNode(1, new BinaryNode(2), new BinaryNode(3));
+    // console.log(preOrder(res));
+    // Example usage
+const root = new BinaryNode(10, new BinaryNode(5), new BinaryNode(15));
+console.log(DFSSearch(root, 10)); // Output: true
+
+const graph: AdjancyList = [
+    [{ to: 1, weight: 1 }, { to: 2, weight: 1 }],
+    [{ to: 3, weight: 1 }],
+    [{ to: 3, weight: 1 }],
+    []
+];
+
+const source = 0;
+const needle = 3;
+const result = dfs(graph, source, needle);
+
+console.log(result,'res'); // Output the path 
+
 
 }
 
 Main();
 
 
-const list = new LinkedList<number>();
+const dlist  = new DoublyLinkedList();
 
-list.add(100);
-list.add(200);
-list.add(300);
-list.add(400);
-list.add(500);
-list.insertAt(2400, 3);
-list.removeAt(3);
-list.printAll();
+dlist.append(1);
+dlist.append(2);
+
+console.log(dlist);
+
+
+const h = new MinHeap();
+
+h.insert(1);
+h.insert(12);
+h.insert(13);
+h.delete(1);
+h.delete(1);
+h.delete
+
+
+console.log(h);
+
+// const list = new LinkedList<number>();
+
+// list.add(100);
+// list.add(200);
+// list.add(300);
+// list.add(400);
+// list.add(500);
+// list.insertAt(2400, 3);
+// list.removeAt(3);
+// list.printAll();
 
 
 
@@ -122,3 +175,74 @@ list.printAll();
 // stack.push(4)
 // console.log(stack.peek())
 // console.log(stack);
+
+
+
+// const q  = new Queue2();
+
+// q.enqueue('Taufique');
+// q.enqueue('Asif');
+// q.enqueue('Someone');
+// q.enqueue('No One');
+// q.dequeue();
+
+// console.log(q.peek());
+
+// console.log(q);
+
+
+// const stack = new Stack2();
+
+
+// stack.push(1);
+// stack.push(2);
+// stack.push(3);
+// stack.push(4);
+// stack.push(5);
+// stack.push(6);
+// stack.pop();
+// stack.pop();
+
+// console.log(stack.peek());
+
+// console.log(stack);
+
+
+
+// type Point = {
+//      x: number,
+//      y:number
+// }
+
+// const maze = [
+//     '....',
+//     '.##.',
+//     '....',
+//     '....'
+// ];
+
+
+// const maze2 = [
+//     "xxxxxxxxxx x",
+//     "x        x x" ,
+//     "x        x x" ,
+//     "x xxxxxxxx x" ,
+//     "x          x" ,
+//     "x xxxxxxxxxx",
+    
+// ]
+
+// const wall2 = 'x';
+
+// const start2 : Point = { x:10 ,y:0};
+// const end2 : Point = { x:1 ,y:5};
+
+
+// const wall = '#';
+// const start: Point = { x: 0, y: 0 };
+// const end: Point = { x: 3, y: 3 };
+
+// // const path = Solve(maze, wall, start, end);
+
+// const path2 = Solve(maze2 , wall , start2 , end2);
+// console.log(path2);
