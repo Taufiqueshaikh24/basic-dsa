@@ -113,11 +113,20 @@ class LinkedList {
             if(curr === this.head){
                 this.head = this.head.next; 
             }else{
-                prev.next = curr.next; 
-                if(curr === this.tail){
-                    this.tail  = prev ; 
-                }
-            }
+                                  prev.next = curr.next;
+                      //   here prev is -1 ;
+                      // curr is curr
+                      // curr = curr +1 
+                      // we setting prev.next = curr.next;
+                      // skipping the curr 
+                       console.log("prev",prev);
+                       console.log("curr",curr)
+                          if (curr === this.tail) {
+                              // if curr == tail 
+                              // keep the tail as curr ;
+                              this.tail = prev;
+                              console.log(prev);
+                              }
             
             this.length--;
               
