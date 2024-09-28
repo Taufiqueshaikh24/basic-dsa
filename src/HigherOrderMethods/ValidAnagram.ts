@@ -26,3 +26,28 @@ console.log(freqcount2);
 
     return  Object.keys(freqcount1).every((char) => freqcount1[char] === freqcount2[char]);
 }
+
+
+
+
+function validAnagramm(str:any, str2:any) {
+  if (str.length !== str2.length) return false;
+
+  let obj:any = {};
+  
+  for (let i = 0; i < str.length; i++) {
+      let char = str[i];
+      obj[char] = (obj[char] || 0) + 1;
+  }
+  
+  for (let j = 0; j < str2.length; j++) {
+      let char = str2[j];
+      if (!obj[char]) {
+          return false;
+      } else {
+          obj[char]--;
+      }
+  }
+  
+  return true;
+}
