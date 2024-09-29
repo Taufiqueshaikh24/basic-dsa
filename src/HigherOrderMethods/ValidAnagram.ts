@@ -51,3 +51,29 @@ function validAnagramm(str:any, str2:any) {
   
   return true;
 }
+
+
+
+
+ction findAllthelementisEqual(arr:number[], t:number):number[][] | undefined {
+    let l = 0, r = arr.length - 1;
+    let a = [];
+    
+    while (l < r) {
+        let sum = arr[l] + arr[r];
+        
+        if (sum < t) {
+            l++;
+        } else if (sum > t) {
+            r--;
+        } else {
+            a.push([arr[l], arr[r]]);
+            l++;
+            r--;
+        }
+    }
+    
+    return a.length > 0 ? a : 'undefined';
+}
+
+console.log(t([-3,-2,-1,0,1,2,3], 0));
